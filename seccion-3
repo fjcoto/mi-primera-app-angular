@@ -1,0 +1,36 @@
+Crear componente por CLI
+
+ng generate component persona
+n g c persona
+
+Crear componente por CLI con templates en línea (sin referenciar a otro fichero, directamente el código en la propiedad)
+
+g c persona -s -t
+
+Documentación de ng generate
+
+https://angular.io/cli/generate
+
+Instalar bootstrap y guardar el módulo en la carpeta de node_modules del proyecto
+
+npm install bootstrap --save
+
+Instalar jquery (Versiones antiguas de Bootstrap)
+
+npm install jquery --save
+
+Instalar popper (Versiones antiguas de Bootstrap)
+
+npm install popper --save
+
+En el fichero "Angular.json" hay que añadir estas líneas para usar Bootstrap:
+
+"styles": [
+    "src/styles.css",
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+"scripts": [
+    "node_modules/jquery/dist/jquery.slim.min.js",
+    "node_modules/popper.js/dist/umd/popper.min.js",
+    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+]

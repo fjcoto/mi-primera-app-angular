@@ -1,0 +1,61 @@
+Página oficial Angular:
+
+https://angular.io
+
+Página oficial Typescript:
+
+https://www.typescriptlang.org
+
+Descarga Node.js:
+
+https://nodejs.org/en/download
+
+Descarga Vistual Studio Code:
+
+https://code.visualstudio.com/Download
+
+Instalar Angular:
+
+1. Abrir terminal
+2. Ejecutar el comando npm install -g @angular/cli (en Linux o Mac, ejecutarlo con sudo)
+
+Crear una App de Angular:
+
+ng new mi-primera-app
+Pulsar Y
+Pulsar N
+Pulsar N
+
+Levantar servidor (dentro de la carpeta del proyecto):
+
+ng serve -o
+
+Parar servidor:
+
+Pulsar Ctrl + C
+
+Componente raíz de la App (es el nombre del selector del componente en el fichero app.component.js):
+
+<app-root></app-root>
+
+Dentro del fichero app.component.js:
+
+El decorador @Component define un componente
+El atributo selector es el nombre del componente
+El atributo templateUrl es la plantilla html que se va a usar
+El atributo styleURls es la plantilla css que se va a usar
+
+class AppComponent define una clase de TypScript con un atributo title con el nombre de la App
+
+Extensiones de Angular para Visual Studio que se recomiendan instalar:
+
+Angular Language Service
+Angular Files
+Dentro de Angular Essentials: Prettier Formatter for Visual Studio Code
+Angular Support
+Angular 2 TypeScript Emmet
+
+También se recomienda instalar estas extensiones:
+
+Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets
+IntelliSense for CSS class names in HTML

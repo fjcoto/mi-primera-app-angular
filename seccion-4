@@ -1,0 +1,51 @@
+Interpolación en Angular
+
+https://angular.io/guide/interpolation
+
+La interpolación es el uso en HTML de atributos declarados en la clase dentro del fichero de TypeScript. Para usarlo debe llamarse a la variable dentro de doble corchete. 
+Ejemplo: {{ nombre }}
+También se puede operar: 
+
+{{ nombre + 'test' }}
+{{ edad + 80 }}
+
+Property Binding:
+
+Se añade una propiedad HTML entre [] y se manipula desde una propiedad de la clase del componente, que tienen que tener el mismo nombre.
+Ejemplo: [disabled]="deshabilitado" (deshabilitado es una propiedad del componente)
+
+https://angular.io/guide/property-binding
+
+Event Binding:
+
+Se añade un evento entre () y se manipula desde un método del componente.
+Ejemplo: (click)="agregarPersona()" (agregarPersona() es un método de la clase del componente)
+
+https://angular.io/guide/event-binding
+
+Las variables que se pasan por parámetro a un método (en el fichero HTML) llevan el símbolo del dolar delante
+
+Ejemplo: modificarTitulo($event)
+
+Two way binding
+
+https://angular.io/guide/two-way-binding
+
+Une los conceptos de Property Binding y Event Binding
+
+Importar módulo de formularios de Angular para usar el Two way binding (dentro de app.module.ts):
+
+imports: [
+    BrowserModule,
+    FormsModule
+  ],
+
+Ejemplo: 
+
+<input
+    type="text"
+    class="form-control" [(ngModel)] = 'titulo'
+/>
+
+Esto permite capturar y modificar el valor de la propiedad desde la plantilla HTML y desde la clase del componente
+
